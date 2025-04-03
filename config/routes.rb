@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+
+  root "home#index"
+  get "home/index"
+  get "home/about"
+  get "home/contactus"
+  get "home/help"
   resources :microposts
   resources :users
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
@@ -14,7 +20,6 @@ Rails.application.routes.draw do
   # # Defines the root path route ("/")
   # # root "posts#index"
 
-  root "users#index"
   resources :users
   
 end
