@@ -37,7 +37,7 @@ gem "bootsnap", require: false
 
 group :development, :test do
 
-  gem "sqlite3", "1.4.2"
+  # gem "sqlite3", "1.4.2"
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
 
@@ -59,6 +59,6 @@ group :test do
   gem "selenium-webdriver"
 end
 
-group :production do
-  gem "pg", "1.3.5"
-end
+# group :production do
+#   gem "pg", "1.3.5"
+# end
